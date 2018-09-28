@@ -1,0 +1,331 @@
+
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 14px;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    background-color: #F6F099;
+    background-image:url("../images/site/background.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+
+    background-size: 100%;   
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.header {
+   background-color: #ffffff; 
+}
+#logoImage {
+    display: static;
+    height: 60px;
+    width: auto;
+    margin: 5px;
+}
+#accountImage {
+    position: absolute;
+    right: 135px;
+    top: 22px;
+    height: 20px;
+    width: auto;
+}
+.headerClicks {
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    font-size: 14pt;
+}
+
+.headerClicks a:link, a:visited {
+   text-decoration: none; 
+}
+
+
+.pageNav {
+	background-color: #990033;
+	position: relative;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+	left: 0;
+	
+	z-index: 100;
+    
+}
+.pageNav ul {
+    width:100%;
+	display: flex;
+	
+	height: 30px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.pageNav li {
+	flex: 1;
+	display: flex;
+    border-right: none;
+    text-align: center;
+    border-bottom: none;
+    background-color: #990033;
+}
+
+.pageNav a {
+    text-decoration: none;
+    color: #ffffff ;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    font-size: 11pt;
+}
+.pageNav a:hover {
+    background-color: #ffffff;
+    color: #990033;
+}
+.active {
+    background-color: #ffffff;
+    color: #990033 !important;
+}
+
+
+main {
+    
+    background-color: #ffffff;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+h1 {
+    font-size: 20pt;
+}
+
+
+
+h2 {
+    font-size: 11pt;
+    line-height: .9em;
+    margin-bottom: 1px;
+    margin-top: 15px;
+}
+.advertisement {
+    flex: 1;
+    width: 100%;
+    position: relative;
+    
+}
+#advertisementImg {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    height: auto;
+    width: 100%;
+    
+}
+
+.advertisement ul {
+    margin-left: -25px;
+    top: 0px;
+    right: 0%;  
+    font-size: 8pt;
+    list-style-type: none;
+    color: #990033;
+    
+}
+.advertisementText {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-color: rgba(255,255,255,0.5) ;
+    
+    
+    margin-top: 0px;
+    
+}
+
+#actionbtn {
+    height: auto;
+    width: 90%;
+}
+
+.content {
+    
+    display: flex !important;
+    flex-direction: column;
+    
+}
+.reviews {
+    flex: 1;
+    
+}
+.recipes {
+    flex: 1;
+    margin-bottom: 50px;
+}
+
+.recipeTiles {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 100%;
+    
+}
+.recipeTiles > div {
+    display: flex;
+    flex-basis: calc(50% - 40px);
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+.recipeTiles > div > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.recipeTiles img {
+    margin: 20px;
+    height: auto;
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+   
+    
+}
+.recipeTiles a {
+    text-align: center;
+}
+footer {
+    position: relative;
+    text-align: center;
+    color: #000000;
+    line-height: 1em;
+    border-top: 2px solid #000000;
+    background-color: #ffffff;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+footer p {
+    margin: 0px;
+    
+    
+}
+
+
+
+
+/*******************************************/
+/**** Medium Screen Size ***/
+@media screen and (min-width: 41.67em) {
+    .pageNav a {
+        font-size: 14pt;
+    }
+    body {
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #accountImage {
+        right: 155px;
+        top: 42px;
+    }
+    .headerClicks {
+        right: 40px;
+        top: 20px;
+    }
+    
+    .advertisement ul {
+        margin-left: -5px;
+        font-size: 14pt;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    #actionbtn {
+
+        width: 70%;
+    }
+    .advertisementText {
+
+        background-color: rgba(255,255,255,0) ;
+    }
+}
+
+
+/*******************************************/
+/**** Large Screen Size ****/
+/*******************************************/
+/*******************************************/
+@media (min-width: 66.7em) {
+    .pageNav a {
+        font-size: 18pt;
+    }    
+    
+    .pageNav ul {
+    	height: 40px;
+	}
+    body {
+        margin-top: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    #accountImage {
+        right: 175px;
+        top: 55px;
+    }
+    .headerClicks {
+        right: 60px;
+        top: 35px;
+    }
+    .advertisement ul {
+        margin-left: 0px;
+        font-size: 20pt;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    #actionbtn {
+
+        width: 50%;
+    }
+    .advertisementText {
+
+        background-color: rgba(255,255,255,0) ;
+    }
+    .content {
+        
+        display: flex !important;
+        flex-direction: row !important; 
+        
+        
+    }
+    .reviews {
+        order: 2;
+        flex: 1;
+        flex-grow: 1;
+    
+    }
+    .recipes {
+        order: 1;
+        flex: 1;
+        flex-grow: 1;
+    }
+}
